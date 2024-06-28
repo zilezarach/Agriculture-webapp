@@ -9,20 +9,20 @@ export const metadata = {
   title: "Agriculture Resource Information Center",
   description: "Connecting Agriculture Stakeholders to knowledge",
 };
-
-const layout = () => {
-return (
-  <html>
-  <body>
-  <div className="flex flex-col min-h-screen">
-  <Navbar/>
-  <Introduction/>
-  <AboutUs/>
-  <Footer/>
-  </div>
-  </body>
-  </html>
-)}
-
-
-export default layout;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <Navbar />
+        <main className="relative overflow-hidden">
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  )
+}

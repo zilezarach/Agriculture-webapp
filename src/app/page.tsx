@@ -1,7 +1,15 @@
-import Image from "next/image";
 
-export default function Home() {
+import Navbar from "@/components/Navbar";
+import Introduction from "@/components/Introduction";
+import AboutUs from "@/components/aboutUs";
+import Footer from "@/components/Footer";
+
+
+export default function Home(){
   return (
-    <div></div>
-  );
+    <>
+          <Introduction/>
+          <AboutUs/> 
+    </>
+  )
 }
