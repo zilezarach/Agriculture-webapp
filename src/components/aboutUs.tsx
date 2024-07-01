@@ -18,7 +18,7 @@ const aboutUs = () => {
       {src: '/img8.jpg'}
     ];
 
-    const settings = {
+    var settings = {
       dots: true,
       infinite: true,
       speed: 600,
@@ -26,6 +26,7 @@ const aboutUs = () => {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
+      mobileFirst: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -34,18 +35,25 @@ const aboutUs = () => {
             slidesToScroll: 1,
             infinite: true,
             dots: true,
-          }
+          },
         },
         {
-          breakpoint:600,
+          breakpoint:768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint:480,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
-          }
-        }
-      ]
+          },
+        },
+      ],
     }
-
+ 
     return (
         <div id="about-us">
             <div className="relative py-16 bg-cover bg-center">
@@ -63,7 +71,7 @@ const aboutUs = () => {
                   <h1 className="text-3xl font-bold mb-4 text-green-800 no-underline hover:underline">Mission</h1>
                   <p className="text-lg mb-4 text-black font-bold">To Provide quality Agricultural Information to the farming community and other stakeholders using intergrated information platforms.</p>
                 </div>
-                <div className="md:w-1/4 mt-8 md:mt-0">
+                <div className="md:w-1/4">
                 <Slider {...settings}>
                   {images.map((image, index)=>
                       <div key={index}>
@@ -73,7 +81,7 @@ const aboutUs = () => {
                             width={350}
                             height={500}
                             layout="responsive"
-                            objectFit="contain"
+                            className="w-full h-auto"
                         />
                       </div>
                     )}
