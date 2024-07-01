@@ -1,21 +1,10 @@
 'use client'
 import Type from "@/content/type"
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 const Introduction = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    const slides = []
-    const nextSlide = () => {
-        setCurrentSlide((currentSlide + 1 )%slides.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((currentSlide - 1 + slides.length)%slides.length)
-    };
-
     return (
         <section>
             <div className="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center" style={{backgroundImage: "url('/agriN.jpg')"}}>
@@ -29,7 +18,7 @@ const Introduction = () => {
                                 alt="farmerb"
                                 width={500}
                                 height={700}
-                                layout="intrinstic"
+                                layout="intrinsic"
                                 objectFit="contain"
                             />
                     </div>
