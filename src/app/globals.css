@@ -110,4 +110,14 @@ html{
 .slider-container {
   width: 100%;
   height: auto;
+  overflow: hidden;
+}
+.slide{
+  width: 100%;
+  height: auto;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

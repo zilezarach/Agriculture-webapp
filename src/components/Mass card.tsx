@@ -13,7 +13,7 @@ const MassCard = () => {
                 <li>Hire of highly qualified Mass Media Crew.</li>
                 <li>Script translation and Sale of Agricultural Documentaries.</li>
             </ul>
-            <h2 className="text-center text-3xl font-bold text-green-800 mb-4">Our PriceList</h2>
+            <h2 className="text-center text-3xl font-bold text-green-800 mb-4 no-underline hover:underline">Our PriceList</h2>
         </section>
     )
 }

@@ -71,10 +71,10 @@ const aboutUs = () => {
                   <h1 className="text-3xl font-bold mb-4 text-green-800 no-underline hover:underline">Mission</h1>
                   <p className="text-lg mb-4 text-black font-bold">To Provide quality Agricultural Information to the farming community and other stakeholders using intergrated information platforms.</p>
                 </div>
-                <div className="md:w-1/4">
+                <div className="md:w-1/4 slider-container">
                 <Slider {...settings}>
                   {images.map((image, index)=>
-                      <div key={index}>
+                      <div key={index} className="slide">
                         <Image
                             src={image.src}
                             alt="about us"
