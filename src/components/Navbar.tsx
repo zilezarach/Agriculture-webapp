@@ -47,7 +47,7 @@ const Navbar = () => {
             <li><button onClick={handleDropdownToggle} className="hover:text-green-600 hover:underline focus:outline-none">Services<FaServicestack/></button>{isDropdownOpen &&(
                 <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg">
                     <li><a href="/MassMedia" className="block px-4 py-2 hover:bg-gray-100">Mass Media</a></li>
-                    <li><a href="/Training unit" className="block px-4 py-2 hover:bg-gray-100">Training Unit</a></li>
+                    <li><a href="/TrainingUnit" className="block px-4 py-2 hover:bg-gray-100">Training Unit and Accommodation</a></li>
                     <li><a href= "/Printing and Design"className="block px-4 py-2 hover:bg-gray-100">Printing and Design</a></li>
                 </ul>
             )}
