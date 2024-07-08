@@ -1,0 +1,123 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top:0%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.logoContainer{
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer img {
+  margin-right: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  font-weight: bold;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px ;
+}
+
+.navLinks a:hover{
+  text-decoration: underline;
+  color: green;
+}
+
+.menu-icon{
+  display: none;
+  cursor: pointer;
+}
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    position: absolute;
+    top: 50px;
+    left: 75%;
+    padding: 1rem 0;
+    z-index: 2;
+  }
+  .navLinks.active {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+  
+}
+.blur-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/agriN.jpg') center/cover no-repeat;
+  z-index: -1;
+  filter: blur(8px);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgreen;
+  bottom: 0%;
+  padding: 1rem 2rem;
+  text-decoration: whitesmoke;
+}
+.slider-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.slide{
+  width: 100%;
+  height: auto;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
