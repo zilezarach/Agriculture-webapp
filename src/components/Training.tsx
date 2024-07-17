@@ -37,7 +37,7 @@ const Training = () => {
           </tbody>
           <thead>
             <tr>
-              <th className="border border-gray-500 font-bold">Boarding Charges</th>
+              <th className="border border-gray-500 text-green-800 font-bold">Boarding Charges</th>
             </tr>
           </thead>
           <thead>
@@ -70,7 +70,7 @@ const Training = () => {
           </tbody>
           <thead>
             <tr>
-              <th className="border border-gray-500 font-bold">Hiring</th>
+              <th className="border border-gray-500 text-green-800 font-bold">Hiring</th>
             </tr>
           </thead>
           <thead>
@@ -107,7 +107,7 @@ const Training = () => {
           </tbody>
           <thead>
             <tr>
-              <td className="border border-gray-500 font-bold">Training Packages</td>
+              <td className=" text-center border border-gray-500 text-green-800 font-bold">Training Packages</td>
             </tr>
           </thead>
           <thead>

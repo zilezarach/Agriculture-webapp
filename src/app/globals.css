@@ -73,7 +73,7 @@ html{
     top: 50px;
     left: 75%;
     padding: 1rem 0;
-    z-index: 2;
+    z-index: 1;
   }
   .navLinks.active {
     display: flex;
