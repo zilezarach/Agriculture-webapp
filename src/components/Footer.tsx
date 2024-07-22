@@ -37,7 +37,7 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4 text-white no-underline hover:underline">For Staff</h2>
           <ul>
-            <li className="mb-2"><a href="" className="text-white hover:text-lime-400"><IoMailOpenSharp />Access the Mail</a></li>
+            <li className="mb-2"><a href="/email" className="text-white hover:text-lime-400"><IoMailOpenSharp />Access the Mail</a></li>
           </ul>
         </div>
       </div>

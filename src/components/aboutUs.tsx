@@ -85,8 +85,8 @@ const aboutUs = () => {
                 <div key={index} className="slide">
                   <Image
                     src={image.src}
-                    width={300}
-                    height={300}
+                    width={400}
+                    height={400}
                     alt="about us"
                     layout="responsive"
                     className="w-full h-auto"
