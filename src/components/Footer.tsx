@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h2 className="text-lg font-bold mb-4 text-white no-underline hover:underline">Address</h2>
-          <p className="mb-2 text-white">The director</p>
-          <p className="mb-2 text-white">AIRC P.O.BOX 66730-00800</p>
+          <p className="mb-2 text-white">The Director</p>
+          <p className="mb-2 text-white">AIRC P.O.Box 66730-00800</p>
           <p className="mb-2 text-white">Nairobi</p>
           <p className="mb-2 text-white">Tel +254722705439/+254712717101</p>
           <p className="mb-2 text-white">E-mail: agrinfodata@gmail.com</p>

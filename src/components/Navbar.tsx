@@ -13,6 +13,8 @@ import { GrMultimedia } from "react-icons/gr";
 
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownToggle = () => {
@@ -24,6 +26,11 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsMobileOpen(!isMobileOpen);
   };
+
+  const handledropToggle = () => {
+    setIsOpen(!isOpen); name
+  }
+
   return (
     <nav className="navbar">
       <div className="logoContainer">
@@ -42,9 +49,9 @@ const Navbar = () => {
 
         />
       </div>
-      <div className={`navLinks ${isMobileOpen ? 'open' : ''}`}>
+      <div className="navLinks">
         <li><Link href="/">Home<TiHome /></Link></li>
-        <li><button onClick={handleDropdownToggle} className="hover:text-green-600 hover:underline focus:outline-none">Services<FaServicestack /></button>{isDropdownOpen && (
+        <li><button onClick={handleDropdownToggle} className="hover:text-green-600 hover:underline focus:outline-none text-sm">Services<FaServicestack /></button>{isDropdownOpen && (
           <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg">
             <li><a href="/MassMedia" className="block px-4 py-2 hover:bg-gray-100">Mass Media</a></li>
             <li><a href="/TrainingUnit" className="block px-4 py-2 hover:bg-gray-100">Training Unit and Accommodation</a></li>
@@ -52,11 +59,15 @@ const Navbar = () => {
           </ul>
         )}
         </li>
-        <li><Link href="/Mediacenter">Media Center<GrMultimedia /></Link></li>
+        <li><button onClick={handledropToggle} className="hover:text-green-600 hover:underline focus:outline-none text-sm">Media Center<GrMultimedia /></button>{isOpen && (
+          <ul className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg">
+            <li><a href="/education" className="block px-4 py-2 hover:bg-gray-100">Educational videos</a></li>
+            <li><a href="/MinistryPolicies" className="block px-4 py-2 hover:bg-gray-100">Ministry Policies</a></li>
+            <li><a href="/Newsletter" className="block px-4 py-2 hover:bg-gray-100">Newsletters</a></li>
+          </ul>
+        )}
+        </li>
         <li><Link href="/contact">Contact<IoMdContact /></Link></li>
-      </div>
-      <div className="menu-icon" onClick={toggleMobileMenu}>
-        {isMobileOpen ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
   )

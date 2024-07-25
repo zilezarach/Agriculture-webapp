@@ -30,19 +30,19 @@ const MassCard = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-gray-500">Camera</td>
+              <td className="border rounded border-gray-500">Camera</td>
               <td className="border border-gray-500 font-bold">20000.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Editing suit</td>
+              <td className="border rounded border-gray-500">Editing suit</td>
               <td className="border border-gray-500 font-bold">25000.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Lights(3 sets)</td>
+              <td className="border rounded border-gray-500">Lights(3 sets)</td>
               <td className="border border-gray-500 font-bold">5000.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Boom Microphone</td>
+              <td className="border rounded border-black">Boom Microphone</td>
               <td className="border border-gray-500 font-bold">2000.00</td>
             </tr>
             <tr>
