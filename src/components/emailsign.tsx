@@ -13,7 +13,7 @@ const Email = () => {
             type="text"
             id="email"
             name="email"
-            className="px-2 py-3 w-full border text-black"
+            className="px-2 py-3 w-full border text-black rounded-full border-green-600"
           />
         </div>
         <div className="mb-4">
@@ -22,7 +22,7 @@ const Email = () => {
             type="password"
             id="email"
             name="password"
-            className="px-2 py-3 w-full border text-black"
+            className="px-2 py-3 w-full border text-black rounded-full border-green-600"
           />
         </div>
         <button className=" font-bold mb-3 px-2 py-3 rounded flex items-center bg-green-600 hover:bg-indigo-600">Sign In</button>
