@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-const mobileNav = async () => {
+const MobileNav = async () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
