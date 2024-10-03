@@ -1,14 +1,23 @@
-
-
 const Training = () => {
-
   return (
-
     <section className="container mx-auto">
-      <h1 className="text-3xl font-bold text-green-800 mb-4">Do you want to extend your knowledge in various fields related to Agriculture?</h1>
-      <p className="text-lg font-bold mb-4">The Center Offers training on short development courses in Extension Management and communication,this courses are talior-made and are conducted at the center or other venues and on dates convenient to clients.</p>
-      <p className="text-lg font-bold mb-4">The Center also offers Accommodation and hiring of it's conference facilities to clients.</p>
-      <h2 className="text-center no-underline hover:underline text-3xl font-bold text-green-800 mb-5">Our PriceList</h2>
+      <h1 className="text-3xl font-bold text-green-800 mb-4">
+        Do you want to extend your knowledge in various fields related to
+        Agriculture?
+      </h1>
+      <p className="text-lg font-bold mb-4">
+        The Center Offers training on short development courses in Extension
+        Management and communication,this courses are talior-made and are
+        conducted at the center or other venues and on dates convenient to
+        clients.
+      </p>
+      <p className="text-lg font-bold mb-4">
+        The Center also offers Accommodation and hiring of its conference
+        facilities to clients.
+      </p>
+      <h2 className="text-center no-underline hover:underline text-3xl font-bold text-green-800 mb-5">
+        Our PriceList
+      </h2>
       <div className=" flex items-center justify-center min-h-screen mb-5">
         <table className="table-fixed border-separate border border-gray-500 border-spacing-3">
           <thead>
@@ -21,23 +30,34 @@ const Training = () => {
           <tbody>
             <tr>
               <td className="border border-gray-500">English Breakfast</td>
-              <td className="border border-gray-500">Tea, a glass of juice, cereals, buttered slice of bread, one egg, baked beans, a sausage and a fruit.</td>
+              <td className="border border-gray-500">
+                Tea, a glass of juice, cereals, buttered slice of bread, one
+                egg, baked beans, a sausage and a fruit.
+              </td>
               <td className="border border-gray-500 font-bold">400.00</td>
             </tr>
             <tr>
               <td className="border border-gray-500">Lunch Buffet</td>
-              <td className="border border-gray-500">Soup, two carbohydrates, two proteins, two vegetables, dessert, soda</td>
+              <td className="border border-gray-500">
+                Soup, two carbohydrates, two proteins, two vegetables, dessert,
+                soda
+              </td>
               <td className="border border-gray-500 font-bold">650.00</td>
             </tr>
             <tr>
               <td className="border border-gray-500">Dinner</td>
-              <td className="border border-gray-500">Soup, two carbohydrates, two proteins, two vegetables, dessert, tea</td>
+              <td className="border border-gray-500">
+                Soup, two carbohydrates, two proteins, two vegetables, dessert,
+                tea
+              </td>
               <td className="border border-gray-500 font-bold">650.00</td>
             </tr>
           </tbody>
           <thead>
             <tr>
-              <th className="border border-gray-500 text-green-800 font-bold">Boarding Charges</th>
+              <th className="border border-gray-500 text-green-800 font-bold">
+                Boarding Charges
+              </th>
             </tr>
           </thead>
           <thead>
@@ -52,7 +72,9 @@ const Training = () => {
               <td className="border border-gray-500 font-bold">3300.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Bed and Breakfast(Per head)</td>
+              <td className="border border-gray-500">
+                Bed and Breakfast(Per head)
+              </td>
               <td className="border border-gray-500 font-bold">1600.00</td>
             </tr>
             <tr>
@@ -60,7 +82,9 @@ const Training = () => {
               <td className="border border-gray-500 font-bold">1050.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Half Board (Bed, Dinner and Breakfast)</td>
+              <td className="border border-gray-500">
+                Half Board (Bed, Dinner and Breakfast)
+              </td>
               <td className="border border-gray-500 font-bold">2250.00</td>
             </tr>
             <tr>
@@ -70,7 +94,9 @@ const Training = () => {
           </tbody>
           <thead>
             <tr>
-              <th className="border border-gray-500 text-green-800 font-bold">Hiring</th>
+              <th className="border border-gray-500 text-green-800 font-bold">
+                Hiring
+              </th>
             </tr>
           </thead>
           <thead>
@@ -81,11 +107,15 @@ const Training = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-gray-500">Big Seminar Room (Max 50 Participants)</td>
+              <td className="border border-gray-500">
+                Big Seminar Room (Max 50 Participants)
+              </td>
               <td className="border border-gray-500 font-bold">3000.00</td>
             </tr>
             <tr>
-              <td className="border border-gray-500">Small Seminar Room (Max 15 Participants)</td>
+              <td className="border border-gray-500">
+                Small Seminar Room (Max 15 Participants)
+              </td>
               <td className="border border-gray-500 font-bold">2000.00</td>
             </tr>
             <tr>
@@ -107,7 +137,9 @@ const Training = () => {
           </tbody>
           <thead>
             <tr>
-              <td className=" text-center border border-gray-500 text-green-800 font-bold">Training Packages</td>
+              <td className=" text-center border border-gray-500 text-green-800 font-bold">
+                Training Packages
+              </td>
             </tr>
           </thead>
           <thead>
@@ -129,14 +161,7 @@ const Training = () => {
         </table>
       </div>
     </section>
-
-
-
-
-
-  )
-
-}
-
+  );
+};
 
 export default Training;
