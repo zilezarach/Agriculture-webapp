@@ -1,10 +1,5 @@
 import React from "react";
-import Printing from "@/components/Printing.tsx"
+import Printing from "@/components/Printing";
 export default function Page() {
-   return (
-     
-     <Printing/>
-
-   )
-
+  return <Printing />;
 }
