@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logoContainer">
-        <Image src="/Gok.png" alt="logo" height={198} width={200} />
+        <Image src="/Gok.png" alt="logo" height={150} width={200} />
         <Image src="/logo.png" alt="logo" height={400} width={195} />
       </div>
 
@@ -50,17 +50,26 @@ const Navbar = () => {
           {isDropdownOpen && (
             <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg">
               <li>
-                <a href="/MassMedia" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/MassMedia"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Mass Media
                 </a>
               </li>
               <li>
-                <a href="/TrainingUnit" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/TrainingUnit"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Training Unit and Accommodation
                 </a>
               </li>
               <li>
-                <a href="/PrintingDesign" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/PrintingDesign"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Printing and Design
                 </a>
               </li>
@@ -77,17 +86,26 @@ const Navbar = () => {
           {isOpen && (
             <ul className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg">
               <li>
-                <a href="/education" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/education"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Educational videos
                 </a>
               </li>
               <li>
-                <a href="/MinistryPolicies" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/MinistryPolicies"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Ministry Policies
                 </a>
               </li>
               <li>
-                <a href="/Newsletter" className="block px-4 py-2 hover:bg-gray-100">
+                <a
+                  href="/Newsletter"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Newsletters
                 </a>
               </li>
