@@ -1,11 +1,10 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -18,7 +17,7 @@ html{
 .navbar {
   display: flex;
   position: sticky;
-  top:0%;
+  top: 0%;
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
@@ -26,7 +25,7 @@ html{
   z-index: 1000;
 }
 
-.logoContainer{
+.logoContainer {
   display: flex;
   align-items: center;
 }
@@ -45,43 +44,67 @@ html{
 .navLinks a {
   text-decoration: none;
   font-size: 15px;
-  padding: 20px ;
+  padding: 20px;
 }
 
-.navLinks a:hover{
+.navLinks a:hover {
   text-decoration: underline;
   color: green;
 }
 
-.menu-icon{
+.menu-icon {
   display: none;
   cursor: pointer;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    position: relative;
+    flex-direction: row;
     align-items: center;
+    padding: 1rem;
   }
 
-  .navLinks{
+  .navLinks {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: whitesmoke;
-    border: 3px solid black;
     position: absolute;
-    top: 50px;
-    left: 75%;
+    top: 100%;
+    left: 0;
+    right: 0;
     padding: 1rem 0;
-    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
   .navLinks.active {
     display: flex;
   }
-  .menu-icon {
+
+  .navLinks li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navLinks a {
+    padding: 12px;
     display: block;
   }
-  
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navLinks .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background-color: #f8f8f8;
+    margin-top: 0;
+  }
 }
 .blur-background {
   position: relative;
@@ -95,7 +118,7 @@ html{
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/agriN.jpg') center/cover no-repeat;
+  background: url("/agriN.jpg") center/cover no-repeat;
   z-index: -1;
   filter: blur(8px);
 }
@@ -112,7 +135,7 @@ html{
   height: auto;
   overflow: hidden;
 }
-.slide{
+.slide {
   width: 100%;
   height: auto;
 }
