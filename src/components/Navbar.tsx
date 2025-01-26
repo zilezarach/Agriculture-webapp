@@ -25,8 +25,21 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logoContainer">
-        <Image src="/Gok.png" alt="logo" height={198} width={200} />
-        <Image src="/logo.png" alt="logo" height={400} width={195} />
+        <Image
+          src="/Gok.png"
+          alt="logo"
+          height={200}
+          width={200}
+          className="hidden md:block h-12 w-auto"
+        />
+        <Image
+          src="/logo.png"
+          alt="logo"
+          height={200}
+          width={200}
+          quality={100}
+          className="h-16 w-auto object-contain"
+        />
       </div>
       <div className={`navLinks ${isMobileOpen ? "active" : ""}`}>
         <li>

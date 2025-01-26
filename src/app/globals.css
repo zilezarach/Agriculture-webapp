@@ -28,6 +28,9 @@ html {
 .logoContainer {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  max-width: 80%;
+  padding: 0.5rem 0;
 }
 
 .logoContainer img {
@@ -63,7 +66,23 @@ html {
     align-items: center;
     padding: 1rem;
   }
+  .logoContainer {
+    gap: 0.25rem;
+    max-width: 70%;
+    justify-content: center;
+  }
+  .logoContainer img {
+    margin-right: 0;
+    max-height: 60px;
+  }
 
+  .logoContainer img {
+    object-fit: contain;
+    height: auto;
+  }
+  .logoContainer img:last-child {
+    max-width: 100px;
+  }
   .navLinks {
     display: none;
     flex-direction: column;
